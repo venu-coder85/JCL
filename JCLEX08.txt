@@ -1,0 +1,8 @@
+//TECN091# JOB  'DEV',VENU,CLASS=A,                                     00010005
+//  MSGCLASS=A,MSGLEVEL=(1,1),NOTIFY=&SYSUID                            00020001
+//STEP1    EXEC PGM=IEFBR14                                             00030006
+//DD1      DD   DSN=TECN091.MYDATA.PS2,DISP=(NEW,CATLG,DELETE),         00040003
+//  SPACE=(TRK,(1,1)),DCB=(LRECL=80,RECFM=FB,BLKSIZE=800)               00050001
+//STEP2    EXEC PGM=IEFBR14                                             00051006
+//DD2      DD   DSN=TECN091.MYDATA.PDS2,DISP=(NEW,CATLG,DELETE),        00060003
+//  SPACE=(TRK,(1,1,5)),DCB=(LRECL=80,RECFM=FB,BLKSIZE=800)             00070003
